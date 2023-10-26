@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Engine/Rendering/VertexArray",
+		"source" : "Engine/Rendering/VertexArray"
+	}
+}

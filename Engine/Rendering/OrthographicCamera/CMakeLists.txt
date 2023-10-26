@@ -1,0 +1,4 @@
+add_library(OrthographicCamera OrthographicCamera.cpp)
+add_library(Engine::OrthographicCamera ALIAS OrthographicCamera)
+target_include_directories(OrthographicCamera PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(OrthographicCamera PUBLIC Camera glm)

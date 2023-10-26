@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.15)
+project(PROG_2002_Assignments)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_subdirectory(external/tclap)
+add_subdirectory(external/glfw)
+add_subdirectory(external/glad)
+add_subdirectory(external/glm)
+add_subdirectory(external/stb)
+
+add_subdirectory(Engine/GLFWApplication)
+add_subdirectory(Engine/GeometricTools)
+add_subdirectory(Engine/ShadersDataTypes)
+add_subdirectory(Engine/Rendering/VertexBuffer)
+add_subdirectory(Engine/Rendering/IndexBuffer)
+add_subdirectory(Engine/Rendering/BufferLayout)
+add_subdirectory(Engine/Rendering/VertexArray)
+add_subdirectory(Engine/Rendering/Shader)
+add_subdirectory(Engine/Rendering/RenderCommands)
+add_subdirectory(Engine/Rendering/TextureManager)
+add_subdirectory(Engine/Rendering/Camera)
+add_subdirectory(Engine/Rendering/OrthographicCamera)
+add_subdirectory(Engine/Rendering/PerspectiveCamera)
+
+add_subdirectory(Assignment)

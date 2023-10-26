@@ -1,0 +1,4 @@
+add_library(PerspectiveCamera PerspectiveCamera.cpp)
+add_library(Engine::PerspectiveCamera ALIAS PerspectiveCamera)
+target_include_directories(PerspectiveCamera PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_link_libraries(PerspectiveCamera PUBLIC Camera glm)

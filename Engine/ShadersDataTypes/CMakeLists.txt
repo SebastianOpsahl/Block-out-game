@@ -1,0 +1,3 @@
+add_library(ShadersDataTypes INTERFACE)
+add_library(Engine::ShadersDataTypes ALIAS ShadersDataTypes)
+target_include_directories(ShadersDataTypes INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
